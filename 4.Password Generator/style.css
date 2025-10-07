@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.main {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 500px;
+  max-width: 90%;
+}
+
+/* Headings */
+.generate {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.random {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  outline: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 6px rgba(102,126,234,0.6);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.copy {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.copy:hover {
+  background: #ddd;
+}
+
+.btn {
+  background: #667eea;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #556cd6;
+}
