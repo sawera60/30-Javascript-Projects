@@ -3,5 +3,6 @@ function openPopup() {
     popup.classList.add("open-popup")
 }
 function closePopup() {
+    //remove the popup
     popup.classList.remove("open-popup")
 }
