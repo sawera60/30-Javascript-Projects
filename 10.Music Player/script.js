@@ -5,32 +5,25 @@ const playButton = document.querySelector(".playbutton");
 const forward = document.querySelector(".forward");
 
 
-
-
 function playSong() {
-
-
-
-}
-
-
-playButton.addEventListener('click', (e) => {
     let audiotag = document.createElement("audio");
-    audiotag.setAttribute('src', 'music/');
+    audiotag.setAttribute('src', 'music/regardless.mp3');
+    document.body.appendChild(audiotag);
     audiotag.play();
     h2.innerHTML = "Regardless"
     p.innerHTML = "Asim Azhar"
+}
 
-
+playButton.addEventListener('click', (e) => {
+    playSong();
 })
 
+
 function previousSong() {
-
-
 }
 
 backward.addEventListener('click', (e) => {
-    alert("hey")
+  
 })
 
 
@@ -40,5 +33,5 @@ function nextSong() {
 }
 
 forward.addEventListener('click', (e) => {
-    alert("hey")
+   
 })

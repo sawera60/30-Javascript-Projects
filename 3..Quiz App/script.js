@@ -1,23 +1,3 @@
-
-const question = document.getElementById("question");
-const answerButton = document.querySelector(".answer-buttons");
-const nextButton = document.getElementById("next-btn");
-
-let currentQuestionIndex=0
-let score=0
-
-function startQuiz(){
-    currentQuestionIndex=0
-    score=0
-    nextButton.innerHTML="next";
-    showQuestion();
-}
-
-function showQuestion(){
-    questions.map(()=>{
-
-    })
-}
 const questions = [
     {
         question1: "which is the larget animal in the world",
@@ -46,7 +26,7 @@ const questions = [
         ]
     },
     {
-        question1: "what is the capital of pakistan",
+        question3: "what is the capital of pakistan",
         answers: [
 
             { text: "karachi", correct: false },
@@ -61,3 +41,23 @@ const questions = [
 
 
 ];
+
+const question = document.getElementById("question");
+const answerButton = document.querySelector(".answer-buttons");
+const nextButton = document.getElementById("next-btn");
+
+let currentQuestionIndex=0
+let score=0
+
+function startQuiz(){
+    currentQuestionIndex=0
+    score=0
+    nextButton.innerHTML="next";
+    showQuestion();
+}
+
+function showQuestion(){
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo= currentQuestionIndex +1;
+    questionElement.innerHTML= questionNo + "." currentQuestion.question
+} 
