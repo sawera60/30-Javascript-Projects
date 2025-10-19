@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Search Engine</title>
+    <title>Product Search Engine/Filter Bar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
+    <section class="container">
+        <form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="search-item" placeholder="Search Products" onkeyup="search()">
+        </form>
+
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <img src="" alt="">
+                <div class="p-details">
+                    <h2>Tshirt for everyone</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="" alt="">
+                <div class="p-details">
+                    <h2>Hoodies Fashion</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="" alt="">
+                <div class="p-details">
+                    <h2>adidas Sneaker</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="" alt="">
+                <div class="p-details">
+                    <h2>Adidas Grand Court Sneaker</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="" alt="">
+                <div class="p-details">
+                    <h2>Tshirt for everyone</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="" alt="">
+                <div class="p-details">
+                    <h2>Tshirt for everyone</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
