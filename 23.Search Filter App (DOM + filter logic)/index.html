@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Filter App</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Search, Category & Price Filter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Product Search & Filter</h1>
 
+    <div class="search-filter">
+      <input type="text" id="search-item" placeholder="Search products...">
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="furniture">Furniture</option>
+      </select>
 
+      <div class="price-filter">
+        <input type="number" id="min-price" placeholder="Min ₹">
+        <input type="number" id="max-price" placeholder="Max ₹">
+        <button id="filter-btn">Filter</button>
+      </div>
+    </div>
 
+    <div id="product-list" class="product-list">
 
+      <div class="product" data-category="electronics" data-price="45000">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580" alt="Smartphone" alt="Smartphone">
+        <h2>Smartphone</h2>
+        <p>High quality Android phone.</p>
+        <span class="price">₹45,000</span>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="product" data-category="clothing" data-price="1200">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="T-Shirt">
+        <h2>T-Shirt</h2>
+        <p>Comfortable cotton t-shirt.</p>
+        <span class="price">₹1,200</span>
+      </div>
+
+      <div class="product" data-category="furniture" data-price="8500">
+        <img src="https://plus.unsplash.com/premium_photo-1678074057896-eee996d4a23e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=387" alt="Wooden Chair">
+        <h2>Wooden Chair</h2>
+        <p>Durable and stylish chair.</p>
+        <span class="price">₹8,500</span>
+      </div>
+
+      <div class="product" data-category="electronics" data-price="98000">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=871" alt="Laptop">
+        <h2>Laptop</h2>
+        <p>Perfect for work and gaming.</p>
+        <span class="price">₹98,000</span>
+      </div>
+
+      <div class="product" data-category="clothing" data-price="4500">
+        <img src="https://plus.unsplash.com/premium_photo-1674719144570-0728faf14f96?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=387" alt="Jacket">
+        <h2>Jacket</h2>
+        <p>Warm and waterproof jacket.</p>
+        <span class="price">₹4,500</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
